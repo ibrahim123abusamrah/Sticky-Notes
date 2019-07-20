@@ -5,8 +5,8 @@
 using namespace std;
 vector<vector<string> > all_user;// all user in project
 
-vector<vector<string> > openfile_contain_all_user(){
- ifstream read_file_that_contain_allUSER;
+void openfile_contain_all_user(){
+    ifstream read_file_that_contain_allUSER;
     read_file_that_contain_allUSER.open("C:\\Users\\Just work\\Documents\\GitHub\\Sticky-Notes\\all_user.txt");
 
     for (int i = 0; i < all_user.size(); i++) {
@@ -27,8 +27,9 @@ bool isUserexist(string First_Name ,string Last_Name){
             is_user_exist = false;
         }
     }
+    return is_user_exist;
 
-    }
+}
 
 int main() {
 
