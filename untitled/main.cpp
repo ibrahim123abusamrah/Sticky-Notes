@@ -25,7 +25,7 @@ void print_allUser(){
         cout<<all_user_firstNAme[i] <<" "<<all_user_secndNAme[i] ;
 
 
-}/*
+}
 bool isUserexist(string First_Name ,string Last_Name){
     bool is_user_exist = false;
 
@@ -39,8 +39,17 @@ bool isUserexist(string First_Name ,string Last_Name){
     }
 	return is_user_exist;
 
-    }*/
+    }
+void addNote_ifUserexsit(){
 
+
+
+}
+void addNote_ifUserNOTexsit(){
+
+
+
+}
 int main() {
     openfile_contain_all_user();
     print_allUser();
