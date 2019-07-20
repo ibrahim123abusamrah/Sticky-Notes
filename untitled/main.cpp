@@ -8,6 +8,7 @@ using namespace std;
 vector<string> all_user_firstNAme, all_user_secndNAme;// all user in project
 
 void adduser_to_file_contain_all_user(string First_Name ,string Last_Name){
+    // this function open file that contain all user and add new user to them
     ofstream write_file_that_contain_allUSER;
     write_file_that_contain_allUSER.open("C:/Users/Just work/Documents/GitHub/Sticky-Notes/all_user.txt", ios::app);
     write_file_that_contain_allUSER<<First_Name<<endl;
@@ -16,6 +17,7 @@ void adduser_to_file_contain_all_user(string First_Name ,string Last_Name){
 
 }
 void openfile_contain_all_user(){
+    // this function open file that contain all user and put them in tow vector
     ifstream read_file_that_contain_allUSER;
     read_file_that_contain_allUSER.open("C:/Users/Just work/Documents/GitHub/Sticky-Notes/all_user.txt");
     string fstName,secName;
@@ -32,12 +34,14 @@ void openfile_contain_all_user(){
     all_user_secndNAme.pop_back();
 }
 void print_allUser(){
+    // print all user
     for (int i = 0; i < all_user_firstNAme.size(); i++)
     cout<<all_user_firstNAme[i] <<" "<<all_user_secndNAme[i]<<endl ;
 
 
 }
 bool isUserexist(string First_Name ,string Last_Name){
+    // check if the user exist between file or not
     bool is_user_exist = false;
 
 
@@ -67,6 +71,7 @@ int main() {
     int choice;
 cout<<all_user_firstNAme.size();
     cout << endl
+    // main menu
          << "Welcome to the brand new ï¿½Sticky Notesï¿½!.\n"
          << "Here is the list of operation this program offers:.\n"
          << " 1 - Add new user.\n"
