@@ -126,6 +126,7 @@ cout<<all_user_firstNAme.size();
             for (int i = 0; i < all_user_firstNAme.size(); i++) {
                 if ((all_user_firstNAme[i] == First_Name) && (all_user_secndNAme[i]== Last_Name)) {
                     is_user_exist = true;
+                    break;
                 } else {
                     is_user_exist = false;
                 }
