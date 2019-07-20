@@ -45,7 +45,16 @@ bool isUserexist(string First_Name ,string Last_Name){
         if ((all_user_firstNAme[i] == First_Name) && (all_user_secndNAme[i]== Last_Name)) {
             is_user_exist = true;
         } else {
+            //* Add new note: (Negative Case)
+
             is_user_exist = false;
+
+            cout << endl
+                 << " Oh! Sorry the user name was not found, please check the name again and if this is your\n"
+                 << " first time here, please go ahead and create a new user from the main menu ...\n"
+                 << " <Click Enter to return to main menu>\n";
+
+
         }
     }
     return is_user_exist;
