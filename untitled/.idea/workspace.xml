@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="48" selection-start-line="47" selection-start-column="29" selection-end-line="49" />
+            <state relative-caret-position="425">
+              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -124,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1563623429815</updated>
       <workItem from="1563623433184" duration="108000" />
-      <workItem from="1563624314019" duration="3773000" />
+      <workItem from="1563624314019" duration="4633000" />
     </task>
     <task id="LOCAL-00001" summary="first code that i copy this project from previous project that didn't work">
       <created>1563624874958</created>
@@ -137,7 +137,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3881000" />
+    <option name="totallyTimeSpent" value="4741000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -187,8 +187,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="48" selection-start-line="47" selection-start-column="29" selection-end-line="49" />
+        <state relative-caret-position="425">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
