@@ -158,6 +158,57 @@ cout<<all_user_firstNAme.size();
         }
             break;
 
+        case 3:{
+
+
+            string First_Name, Last_Name;
+            cout << endl
+                 << "Retrieve your notes? Absolutely! \n"
+                 << "Please let know your full name first: <Enter first name> <Enter last Name>.\n";
+            cin>> First_Name ;
+            cin>> Last_Name;
+            bool t = isUserexist(First_Name , Last_Name);
+            if (t==true){
+
+                //view all user’s notes: (Positive Case)
+
+                cout<<"Found it!\n"
+                    <<"Here are your stored notes:\n"
+                    <<"-------------\n";
+                string line;
+                int s = 0;
+                string filename = First_Name + " " + Last_Name;
+                ifstream myfile("C:\\\\Users\\\\Just work\\\\Documents\\\\GitHub\\\\Sticky-Notes\\\\untitled\\\\cmake-build-debug\\"+filename + ".txt");
+                if (myfile.is_open()
+                        )
+                {
+                    while (getline (myfile, line))
+                    {
+                        if (line=="***")
+                        {
+                            s++;
+                            if(s==3){
+                                cout<<"------------------------\n";
+                                 S=0;                  }}
+                        else
+                            cout << line << '\n';
+                    }
+                    myfile.
+                            close();
+                }
+            }
+            else
+            { // view all user’s notes: (Negative Case)
+                cout<<"\nUmm, can’t find any saved notes for you.\n"
+                    <<"<Click Enter to return to main menu>";
+
+            }
+
+
+
+        }
+        break;
+
     }
     return 0;
 
