@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Just work/Documents/GitHub/Sticky-Notes/untitled/main.cpp
+iostream
+-
+String
+-
+vector
+-
+fstream
+-
+
