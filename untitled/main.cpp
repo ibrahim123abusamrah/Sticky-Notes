@@ -5,6 +5,14 @@
 using namespace std;
 vector<string> all_user_firstNAme, all_user_secndNAme;// all user in project
 
+void adduser_to_file_contain_all_user(string First_Name ,string Last_Name){
+    ofstream write_file_that_contain_allUSER;
+    write_file_that_contain_allUSER.open("C:/Users/Just work/Documents/GitHub/Sticky-Notes/all_user.txt");
+    write_file_that_contain_allUSER<<First_Name<<endl;
+    write_file_that_contain_allUSER<<Last_Name<<endl;
+    write_file_that_contain_allUSER.close();
+
+}
 void openfile_contain_all_user(){
     ifstream read_file_that_contain_allUSER;
     read_file_that_contain_allUSER.open("C:/Users/Just work/Documents/GitHub/Sticky-Notes/all_user.txt");
@@ -18,7 +26,7 @@ void openfile_contain_all_user(){
         read_file_that_contain_allUSER >> secName;
         all_user_secndNAme.push_back(secName);
     }
-
+    read_file_that_contain_allUSER.close();
 }
 void print_allUser(){
     for (int i = 0; i < all_user_firstNAme.size(); i++)
@@ -30,8 +38,8 @@ bool isUserexist(string First_Name ,string Last_Name){
     bool is_user_exist = false;
 
 
-    for (int i = 0; i < all_user.size(); i++) {
-        if ((all_user[i][i] == First_Name) && (all_user[i][i + 1] == Last_Name)) {
+    for (int i = 0; i < all_user_firstNAme.size(); i++) {
+        if ((all_user_firstNAme[i] == First_Name) && (all_user_secndNAme[i]== Last_Name)) {
             is_user_exist = true;
         } else {
             is_user_exist = false;
@@ -51,9 +59,8 @@ void addNote_ifUserNOTexsit(){
 
 }
 int main() {
-    openfile_contain_all_user();
-    print_allUser();
-    /*  int choice;
+
+     int choice;
 
       cout << endl
            << "Welcome to the brand new ï¿½Sticky Notesï¿½!.\n"
@@ -93,7 +100,7 @@ int main() {
 
               cout << "Enter user name";
 
-  /*
+
           }
               //  >>>>>>> 56ff2095387f9f2018d5e2b36d599f4e641aa94e
 
@@ -115,7 +122,7 @@ int main() {
           }
               break;
 
-      }*/
+      }
     return 0;
 
 }
