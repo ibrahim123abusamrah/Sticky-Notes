@@ -67,119 +67,180 @@ void addNote_ifUserNOTexsit(){
 }
 int main() {
 
-    openfile_contain_all_user();    print_allUser();
+    openfile_contain_all_user();
+    print_allUser();
     int choice;
-cout<<all_user_firstNAme.size();
-    cout << endl
-    // main menu
-         << "Welcome to the brand new ï¿½Sticky Notesï¿½!.\n"
-         << "Here is the list of operation this program offers:.\n"
-         << " 1 - Add new user.\n"
-         << " 2 - Add new note.\n"
-         << " 2 - View notes for a specific user.\n"
-         << " 4 - Exit.\n"
-         << " Enter your choice and press return: ";
-    cin >> choice;
+    cout << all_user_firstNAme.size();
 
-    switch (choice) {
-        case 1: {
-            //code to Add new user
-            cout << endl
-                 << "Welcome aboard new user!.\n"
-                 << "Please let me know your first name:.\n";
-            string first_name, last_name, file_name;
-            cin >> first_name;
-            cout << endl
-                 << "Great " << first_name << " , now please enter your last name:";
-            cin >> last_name;
-            cout << endl
-                 << " Done!.\n"
-                 << " Nice to meet you .\n" << first_name << " " << last_name
-                 << " .\n<Click Enter to return to main menu>.\n";
-            //  <<<<<<< HEAD
-            adduser_to_file_contain_all_user(first_name,last_name);
-            string filename = first_name + " " + last_name;
-            cout << filename;
+    cout << endl;
+        // main menu
+        cout << "Welcome to the brand new ï¿½Sticky Notesï¿½!.\n"
+             << "Here is the list of operation this program offers:.\n"
+             << " 1 - Add new user.\n"
+             << " 2 - Add new note.\n"
+             << " 2 - View notes for a specific user.\n"
+             << " 4 - Exit.\n"
+             << " Enter your choice and press return: ";
+        cin >> choice;
 
-            ofstream myfile;
-            myfile.open("C:\\\\Users\\\\Just work\\\\Documents\\\\GitHub\\\\Sticky-Notes\\\\untitled\\\\cmake-build-debug\\"+filename + ".txt");
-            myfile.close();
+        switch (choice) {
+            case 1: {
+                //code to Add new user
+                cout << endl
+                     << "Welcome aboard new user!.\n"
+                     << "Please let me know your first name:.\n";
+                string first_name, last_name, file_name;
+                cin >> first_name;
+                cout << endl
+                     << "Great " << first_name << " , now please enter your last name:";
+                cin >> last_name;
+                cout << endl
+                     << " Done!.\n"
+                     << " Nice to meet you .\n" << first_name << " " << last_name
+                     << " .\n<Click Enter to return to main menu>.\n";
+                //  <<<<<<< HEAD
+                adduser_to_file_contain_all_user(first_name, last_name);
+                string filename = first_name + " " + last_name;
+                cout << filename;
 
-
-
-
-        }
-            //  >>>>>>> 56ff2095387f9f2018d5e2b36d599f4e641aa94e
-
-            break;
-
-        case 2:
-            //code to Add new note (Positive Case )
-
-        {
-            ofstream write_note_tofileUser;
-           // ifstream readNote_tofileUser;
-            string First_Name, Last_Name;
-            cout << " Let’s add a new note ... \n"
-                 << "Please enter your full name first: <Enter First Name> <Enter Last Name> \n";
-            cin >> First_Name >> Last_Name;
+                ofstream myfile;
+                myfile.open(
+                        "C:\\\\Users\\\\Just work\\\\Documents\\\\GitHub\\\\Sticky-Notes\\\\untitled\\\\cmake-build-debug\\" +
+                        filename + ".txt");
+                myfile.close();
 
 
-            bool is_user_exist = false;
+            }
+                //  >>>>>>> 56ff2095387f9f2018d5e2b36d599f4e641aa94e
+
+                break;
+
+            case 2:
+                //code to Add new note (Positive Case )
+
+            {
+                ofstream write_note_tofileUser;
+                // ifstream readNote_tofileUser;
+                string First_Name, Last_Name;
+                cout << " Let’s add a new note ... \n"
+                     << "Please enter your full name first: <Enter First Name> <Enter Last Name> \n";
+                cin >> First_Name >> Last_Name;
 
 
-            for (int i = 0; i < all_user_firstNAme.size(); i++) {
-                if ((all_user_firstNAme[i] == First_Name) && (all_user_secndNAme[i]== Last_Name)) {
-                    is_user_exist = true;
-                    break;
+                bool is_user_exist = false;
+
+
+                for (int i = 0; i < all_user_firstNAme.size(); i++) {
+                    if ((all_user_firstNAme[i] == First_Name) && (all_user_secndNAme[i] == Last_Name)) {
+                        is_user_exist = true;
+                        break;
+                    } else {
+                        is_user_exist = false;
+                    }
+                }
+                if (is_user_exist) {
+                    string userNote;
+                    cout << "\nYour record is found, I’m now opening your file ….";
+                    //readNote_tofileUser.open("C:\\Users\\Just work\\Documents\\GitHub\\Sticky-Notes\\untitled\\cmake-build-debug\\"+First_Name+" "+Last_Name+".txt");
+                    write_note_tofileUser.open(
+                            "C:\\Users\\Just work\\Documents\\GitHub\\Sticky-Notes\\untitled\\cmake-build-debug\\" +
+                            First_Name + " " + Last_Name + ".txt", ios::app);
+
+                    cout << "\nReady!"
+                         << "\nPlease enter your note:\n";
+                    //cin>>userNote;
+                    char ch;
+                    cin.get(ch);
+                    getline(cin, userNote);
+                    // current date/time based on current system
+                    time_t now = time(0);
+
+                    cout << "Number of sec since January 1,1970:" << now << endl;
+
+                    tm *ltm = localtime(&now);
+
+                    // print various components of tm structure.
+
+                    int Year = 1900 + ltm->tm_year;
+                    int Month = 1 + ltm->tm_mon;
+                    int Day = ltm->tm_mday;
+
+
+                    int hour = 1 + ltm->tm_hour;
+                    int mint = 1 + ltm->tm_min;
+                    cout << "Your note has b1een well received, 1 second while saving it ….\n";
+                    if (mint < 10) {
+                        write_note_tofileUser << Month << "/" << Day << "/" << Year << " " << hour << ":" << "0" << mint
+                                              << ":" << "\n***\n" << userNote << "\n***\n";
+
+                    } else {
+
+                        write_note_tofileUser << Month << "/" << Day << "/" << Year << " " << hour << ":" << mint << ":"
+                                              << "\n***\n" << userNote << "\n***\n";
+                    }
+
+
                 } else {
-                    is_user_exist = false;
+
+                    cout << endl
+                         << " Oh! Sorry the user name was not found, please check the name again and if this is your\n"
+                         << " first time here, please go ahead and create a new user from the main menu ...\n"
+                         << " <Click Enter to return to main menu>\n";
                 }
             }
-            if(is_user_exist)
-            {
-                string userNote;
-             cout<<"\nYour record is found, I’m now opening your file ….";
-                //readNote_tofileUser.open("C:\\Users\\Just work\\Documents\\GitHub\\Sticky-Notes\\untitled\\cmake-build-debug\\"+First_Name+" "+Last_Name+".txt");
-                write_note_tofileUser.open("C:\\Users\\Just work\\Documents\\GitHub\\Sticky-Notes\\untitled\\cmake-build-debug\\"+First_Name+" "+Last_Name+".txt", ios::app);
+                break;
+            case 3: {
+                string First_Name, Last_Name;
+                cout << endl
+                     << "Retrieve your notes? Absolutely! \n"
+                     << "Please let know your full name first: <Enter first name> <Enter last Name>.\n";
+                cin >> First_Name;
+                cin >> Last_Name;
+                bool t = isUserexist(First_Name, Last_Name);
+                if (t == true) {
 
-               cout<<"\nReady!"
-               <<"\nPlease enter your note:\n";
-            //cin>>userNote;
-            char ch;
-            cin.get(ch);
-              getline(cin,userNote);
-                // current date/time based on current system
-                time_t now = time(0);
+                    //view all user’s notes: (Positive Case)
 
-                cout << "Number of sec since January 1,1970:" << now << endl;
+                    cout << "Found it!\n"
+                         << "Here are your stored notes:\n"
+                         << "-------------\n";
+                    string line;
+                    int s = 0;
+                    string filename = First_Name + " " + Last_Name;
+                    ifstream myfile(
+                            "C:\\\\Users\\\\Just work\\\\Documents\\\\GitHub\\\\Sticky-Notes\\\\untitled\\\\cmake-build-debug\\" +
+                            filename + ".txt");
+                    int counter = 0;
+                    if (myfile.is_open()) {
+                        while (!myfile.eof()) {
+                            getline(myfile, line);
 
-                tm *ltm = localtime(&now);
+                            if (line == "***") {
+                                counter++;
+                                if (counter == 2) {
+                                    cout << "-------------------------------\n";
+                                    counter = 0;
 
-                // print various components of tm structure.
+                                }
+                                continue;
+                            } else
+                                cout << line << '\n';
+                        }
+                        myfile.
+                                close();
+                    }
+                } else { // view all user’s notes: (Negative Case)
+                    cout << "\nUmm, can’t find any saved notes for you.\n"
+                         << "<Click Enter to return to main menu>";
 
-                int   Year =1900 + ltm->tm_year;
-                int Month = 1 + ltm->tm_mon;
-                int Day=   ltm->tm_mday ;
+                }
 
-
-            cout<<"Your note has b1een well received, 1 second while saving it ….\n";
-            write_note_tofileUser<<userNote<<"\n***\n"<<Month<<"/"<<Day<<"/"<<Year<<"\n***\n";
 
             }
-
-
-        else {
-
-                cout << endl
-                     << " Oh! Sorry the user name was not found, please check the name again and if this is your\n"
-                     << " first time here, please go ahead and create a new user from the main menu ...\n"
-                     << " <Click Enter to return to main menu>\n";
+                break;
         }
-        }
-            break;
 
-    }
-    return 0;
+        return 0;
+
 
 }
