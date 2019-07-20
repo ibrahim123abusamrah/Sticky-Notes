@@ -2,6 +2,8 @@
 #include <String>
 #include<vector>
 #include <fstream>
+#include <ctime>
+
 using namespace std;
 vector<string> all_user_firstNAme, all_user_secndNAme;// all user in project
 
@@ -45,9 +47,9 @@ bool isUserexist(string First_Name ,string Last_Name){
             is_user_exist = false;
         }
     }
-	return is_user_exist;
+    return is_user_exist;
 
-    }
+}
 void addNote_ifUserexsit(){
 
 
@@ -59,70 +61,97 @@ void addNote_ifUserNOTexsit(){
 
 }
 int main() {
+    openfile_contain_all_user();
+    int choice;
 
-     int choice;
+    cout << endl
+         << "Welcome to the brand new ï¿½Sticky Notesï¿½!.\n"
+         << "Here is the list of operation this program offers:.\n"
+         << " 1 - Add new user.\n"
+         << " 2 - Add new note.\n"
+         << " 2 - View notes for a specific user.\n"
+         << " 4 - Exit.\n"
+         << " Enter your choice and press return: ";
+    cin >> choice;
 
-      cout << endl
-           << "Welcome to the brand new ï¿½Sticky Notesï¿½!.\n"
-           << "Here is the list of operation this program offers:.\n"
-           << " 1 - Add new user.\n"
-           << " 2 - Add new note.\n"
-           << " 2 - View notes for a specific user.\n"
-           << " 4 - Exit.\n"
-           << " Enter your choice and press return: ";
-      cin >> choice;
+    switch (choice) {
+        case 1: {
+            //code to Add new user
+            cout << endl
+                 << "Welcome aboard new user!.\n"
+                 << "Please let me know your first name:.\n";
+            string first_name, last_name, file_name;
+            cin >> first_name;
+            cout << endl
+                 << "Great " << first_name << " , now please enter your last name:";
+            cin >> last_name;
+            cout << endl
+                 << " Done!.\n"
+                 << " Nice to meet you .\n" << first_name << " " << last_name
+                 << " .\n<Click Enter to return to main menu>.\n";
+            //  <<<<<<< HEAD
 
-      switch (choice) {
-          case 1: {
-  //code to Add new user
-              cout << endl
-                   << "Welcome aboard new user!.\n"
-                   << "Please let me know your first name:.\n";
-              string first_name, last_name, file_name;
-              cin >> first_name;
-              cout << endl
-                   << "Great " << first_name << " , now please enter your last name:";
-              cin >> last_name;
-              cout << endl
-                   << " Done!.\n"
-                   << " Nice to meet you .\n" << first_name << " " << last_name
-                   << " .\n<Click Enter to return to main menu>.\n";
-              //  <<<<<<< HEAD
+            string filename = first_name + " " + last_name;
+            cout << filename;
 
-              string filename = first_name + " " + last_name;
-              cout << filename;
-
-              ofstream myfile;
-              myfile.open(filename + ".txt");
-              myfile << "Writing this to a file.\n";
-              myfile << "000" << filename;
-              myfile.close();
-
-              cout << "Enter user name";
+            ofstream myfile;
+            myfile.open(filename + ".txt");
+            myfile.close();
 
 
-          }
-              //  >>>>>>> 56ff2095387f9f2018d5e2b36d599f4e641aa94e
-
-              break;
-
-          case 2:
-              //code to Add new note (Positive Case )
-
-          {
-              string First_Name, Last_Name;
-              cout << " Let’s add a new note ... \n"
-                   << "Please enter your full name first: <Enter First Name> <Enter Last Name> \n";
-              cin >> First_Name >> Last_Name;
 
 
-              cout << endl;
+        }
+            //  >>>>>>> 56ff2095387f9f2018d5e2b36d599f4e641aa94e
+
+            break;
+
+        case 2:
+            //code to Add new note (Positive Case )
+
+        {
+            ofstream write_note_tofileUser;
+            string First_Name, Last_Name;
+            cout << " Let’s add a new note ... \n"
+                 << "Please enter your full name first: <Enter First Name> <Enter Last Name> \n";
+            cin >> First_Name >> Last_Name;
 
 
-          }
-              break;
+            bool is_user_exist = false;
 
-      }
+
+            for (int i = 0; i < all_user_firstNAme.size(); i++) {
+                if ((all_user_firstNAme[i] == First_Name) && (all_user_secndNAme[i]== Last_Name)) {
+                    is_user_exist = true;
+                } else {
+                    is_user_exist = false;
+                }
+            }
+            if(is_user_exist)
+            {
+                string userNote;
+             cout<<"\nYour record is found, I’m now opening your file ….";
+                write_note_tofileUser.open("C:\\Users\\Just work\\Documents\\GitHub\\Sticky-Notes\\untitled\\cmake-build-debug\\"+First_Name+" "+Last_Name+".txt");
+               cout<<"\nReady!"
+               <<"\nPlease enter your note:\n";
+            cin>>userNote;
+                // current date/time based on current system
+                time_t now = time(0);
+
+                // convert now to string form
+                char* dt = ctime(&now);
+                cout<< dt;
+            cout<<"Your note has b1een well received, 1 second while saving it ….\n";
+
+                write_note_tofileUser<<userNote<<"\n***\n"<<dt;
+
+            }
+
+
+        }
+            break;
+
+    }
     return 0;
 
 }
