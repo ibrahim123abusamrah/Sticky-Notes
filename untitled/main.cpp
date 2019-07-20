@@ -36,7 +36,7 @@ void openfile_contain_all_user(){
 void print_allUser(){
     // print all user
     for (int i = 0; i < all_user_firstNAme.size(); i++)
-    cout<<all_user_firstNAme[i] <<" "<<all_user_secndNAme[i]<<endl ;
+        cout<<all_user_firstNAme[i] <<" "<<all_user_secndNAme[i]<<endl ;
 
 
 }
@@ -152,15 +152,30 @@ cout<<all_user_firstNAme.size();
                 // current date/time based on current system
                 time_t now = time(0);
 
-                // convert now to string form
-                char* dt = ctime(&now);
-                cout<< dt;
+                cout << "Number of sec since January 1,1970:" << now << endl;
+
+                tm *ltm = localtime(&now);
+
+                // print various components of tm structure.
+
+                int   Year =1900 + ltm->tm_year;
+                int Month = 1 + ltm->tm_mon;
+                int Day=   ltm->tm_mday ;
+
+
             cout<<"Your note has b1een well received, 1 second while saving it ….\n";
-            write_note_tofileUser<<userNote<<"\n***\n"<<dt<<"***\n";
+            write_note_tofileUser<<userNote<<"\n***\n"<<Month<<"/"<<Day<<"/"<<Year<<"\n***\n";
 
             }
 
 
+        else {
+
+                cout << endl
+                     << " Oh! Sorry the user name was not found, please check the name again and if this is your\n"
+                     << " first time here, please go ahead and create a new user from the main menu ...\n"
+                     << " <Click Enter to return to main menu>\n";
+        }
         }
             break;
 

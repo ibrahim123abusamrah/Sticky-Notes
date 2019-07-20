@@ -30,11 +30,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="163" column="9" lean-forward="true" selection-start-line="163" selection-start-column="9" selection-end-line="163" selection-end-column="9" />
+            <state relative-caret-position="175">
+              <caret line="166" column="87" selection-start-line="166" selection-start-column="87" selection-end-line="166" selection-end-column="87" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -52,10 +61,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1376" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -110,13 +119,14 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f082d22f-ead6-4651-9491-6a88d2edc021" name="Default Changelist" comment="" />
+      <changelist id="3bce43b6-7fa3-4629-aa95-b4dfa5235161" name="Default Changelist" comment="" />
       <created>1563623429815</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563623429815</updated>
       <workItem from="1563623433184" duration="108000" />
       <workItem from="1563624314019" duration="13596000" />
+      <workItem from="1563652841287" duration="1966000" />
     </task>
     <task id="LOCAL-00001" summary="first code that i copy this project from previous project that didn't work">
       <created>1563624874958</created>
@@ -129,7 +139,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15456000" />
+    <option name="totallyTimeSpent" value="17422000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -142,14 +152,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.03723404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18003273" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5335516" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -226,10 +235,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="163" column="9" lean-forward="true" selection-start-line="163" selection-start-column="9" selection-end-line="163" selection-end-column="9" />
+        <state relative-caret-position="175">
+          <caret line="166" column="87" selection-start-line="166" selection-start-column="87" selection-end-line="166" selection-end-column="87" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
