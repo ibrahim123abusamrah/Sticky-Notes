@@ -9,7 +9,7 @@ vector<string> all_user_firstNAme, all_user_secndNAme;// all user in project
 
 void adduser_to_file_contain_all_user(string First_Name ,string Last_Name){
     ofstream write_file_that_contain_allUSER;
-    write_file_that_contain_allUSER.open("C:/Users/Just work/Documents/GitHub/Sticky-Notes/all_user.txt");
+    write_file_that_contain_allUSER.open("C:/Users/Just work/Documents/GitHub/Sticky-Notes/all_user.txt", ios::app);
     write_file_that_contain_allUSER<<First_Name<<endl;
     write_file_that_contain_allUSER<<Last_Name<<endl;
     write_file_that_contain_allUSER.close();
@@ -22,17 +22,18 @@ void openfile_contain_all_user(){
     while (!read_file_that_contain_allUSER.eof())
     {
 
-
         read_file_that_contain_allUSER >>fstName;
         all_user_firstNAme.push_back(fstName);
         read_file_that_contain_allUSER >> secName;
         all_user_secndNAme.push_back(secName);
     }
     read_file_that_contain_allUSER.close();
+    all_user_firstNAme.pop_back();
+    all_user_secndNAme.pop_back();
 }
 void print_allUser(){
     for (int i = 0; i < all_user_firstNAme.size(); i++)
-        cout<<all_user_firstNAme[i] <<" "<<all_user_secndNAme[i] ;
+    cout<<all_user_firstNAme[i] <<" "<<all_user_secndNAme[i]<<endl ;
 
 
 }
@@ -61,9 +62,10 @@ void addNote_ifUserNOTexsit(){
 
 }
 int main() {
-    openfile_contain_all_user();
-    int choice;
 
+    openfile_contain_all_user();    print_allUser();
+    int choice;
+cout<<all_user_firstNAme.size();
     cout << endl
          << "Welcome to the brand new ï¿½Sticky Notesï¿½!.\n"
          << "Here is the list of operation this program offers:.\n"
@@ -90,7 +92,7 @@ int main() {
                  << " Nice to meet you .\n" << first_name << " " << last_name
                  << " .\n<Click Enter to return to main menu>.\n";
             //  <<<<<<< HEAD
-
+            adduser_to_file_contain_all_user(first_name,last_name);
             string filename = first_name + " " + last_name;
             cout << filename;
 
@@ -111,6 +113,7 @@ int main() {
 
         {
             ofstream write_note_tofileUser;
+           // ifstream readNote_tofileUser;
             string First_Name, Last_Name;
             cout << " Let’s add a new note ... \n"
                  << "Please enter your full name first: <Enter First Name> <Enter Last Name> \n";
@@ -131,10 +134,15 @@ int main() {
             {
                 string userNote;
              cout<<"\nYour record is found, I’m now opening your file ….";
-                write_note_tofileUser.open("C:\\Users\\Just work\\Documents\\GitHub\\Sticky-Notes\\untitled\\cmake-build-debug\\"+First_Name+" "+Last_Name+".txt");
+                //readNote_tofileUser.open("C:\\Users\\Just work\\Documents\\GitHub\\Sticky-Notes\\untitled\\cmake-build-debug\\"+First_Name+" "+Last_Name+".txt");
+                write_note_tofileUser.open("C:\\Users\\Just work\\Documents\\GitHub\\Sticky-Notes\\untitled\\cmake-build-debug\\"+First_Name+" "+Last_Name+".txt", ios::app);
+
                cout<<"\nReady!"
                <<"\nPlease enter your note:\n";
-            cin>>userNote;
+            //cin>>userNote;
+            char ch;
+            cin.get(ch);
+              getline(cin,userNote);
                 // current date/time based on current system
                 time_t now = time(0);
 
@@ -142,8 +150,7 @@ int main() {
                 char* dt = ctime(&now);
                 cout<< dt;
             cout<<"Your note has b1een well received, 1 second while saving it ….\n";
-
-                write_note_tofileUser<<userNote<<"\n***\n"<<dt;
+            write_note_tofileUser<<userNote<<"\n***\n"<<dt<<"***\n";
 
             }
 
