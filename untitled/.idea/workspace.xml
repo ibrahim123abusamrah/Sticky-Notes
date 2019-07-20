@@ -30,35 +30,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="160" column="5" lean-forward="true" selection-end-line="163" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_vector.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="655" selection-start-line="655" selection-end-line="655" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="5061" selection-start-line="5061" selection-end-line="5061" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="262" selection-start-line="262" selection-end-line="262" />
+            <state relative-caret-position="2108">
+              <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+              <folding>
+                <element signature="e#191#586#0" />
+                <element signature="e#587#1173#0" />
+                <element signature="e#1325#1694#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,7 +131,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14551000" />
+    <option name="totallyTimeSpent" value="15091000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -173,7 +151,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22094926" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36497545" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -252,8 +230,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="160" column="5" lean-forward="true" selection-end-line="163" selection-end-column="1" />
+        <state relative-caret-position="2108">
+          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+          <folding>
+            <element signature="e#191#586#0" />
+            <element signature="e#587#1173#0" />
+            <element signature="e#1325#1694#0" />
+          </folding>
         </state>
       </provider>
     </entry>
