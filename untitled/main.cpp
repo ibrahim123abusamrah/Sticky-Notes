@@ -95,7 +95,7 @@ int main() {
             cout << filename;
 
             ofstream myfile;
-            myfile.open(filename + ".txt");
+            myfile.open("C:\\\\Users\\\\Just work\\\\Documents\\\\GitHub\\\\Sticky-Notes\\\\untitled\\\\cmake-build-debug\\"+filename + ".txt");
             myfile.close();
 
 
