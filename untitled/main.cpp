@@ -189,7 +189,7 @@ cout<<all_user_firstNAme.size();
                             s++;
                             if(s==3){
                                 cout<<"------------------------\n";
-                                 S=0;                  }}
+                                 s=0;                  }}
                         else
                             cout << line << '\n';
                     }
