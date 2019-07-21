@@ -160,7 +160,7 @@ int main() {
                     tm *ltm = localtime(&now);
 
                     // print various components of tm structure.
-
+                    //Store time and date of note
                     int Year = 1900 + ltm->tm_year;
                     int Month = 1 + ltm->tm_mon;
                     int Day = ltm->tm_mday;
@@ -181,7 +181,7 @@ int main() {
 
 
                 } else {
-
+                    //code to Add new note (Negative Case)
                     cout << endl
                          << " Oh! Sorry the user name was not found, please check the name again and if this is your\n"
                          << " first time here, please go ahead and create a new user from the main menu ...\n"
@@ -190,13 +190,14 @@ int main() {
             }
                 break;
             case 3: {
+                //code for view all user’s notes:
                 string First_Name, Last_Name;
                 cout << endl
                      << "Retrieve your notes? Absolutely! \n"
                      << "Please let know your full name first: <Enter first name> <Enter last Name>.\n";
                 cin >> First_Name;
                 cin >> Last_Name;
-                bool t = isUserexist(First_Name, Last_Name);
+                bool t = isUserexist(First_Name, Last_Name); //Check if the name of the input file exists or not
                 if (t == true) {
 
                     //view all user’s notes: (Positive Case)
@@ -205,13 +206,13 @@ int main() {
                          << "Here are your stored notes:\n"
                          << "-------------\n";
                     string line;
-                    int s = 0;
+
                     string filename = First_Name + " " + Last_Name;
                     ifstream myfile(
                             "C:\\\\Users\\\\Just work\\\\Documents\\\\GitHub\\\\Sticky-Notes\\\\untitled\\\\cmake-build-debug\\" +
                             filename + ".txt");
                     int counter = 0;
-                    if (myfile.is_open()) {
+                    if (myfile.is_open()) { //open file name and Print content
                         while (!myfile.eof()) {
                             getline(myfile, line);
 
