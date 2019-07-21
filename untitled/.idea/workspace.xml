@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="239" column="22" lean-forward="true" selection-start-line="239" selection-start-column="22" selection-end-line="239" selection-end-column="22" />
+            <state relative-caret-position="426">
+              <caret line="242" column="1" lean-forward="true" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -42,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
+            <state relative-caret-position="386">
               <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
             </state>
           </provider>
@@ -139,7 +139,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19821000" />
+    <option name="totallyTimeSpent" value="22329000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -151,21 +151,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.03723404" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.026119404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31587562" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.283857" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.36619717" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32733223" />
@@ -182,6 +182,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first code that i copy this project from previous project that didn't work" />
     <option name="LAST_COMMIT_MESSAGE" value="first code that i copy this project from previous project that didn't work" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>244</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
@@ -238,15 +249,15 @@
     </entry>
     <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
+        <state relative-caret-position="386">
           <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="239" column="22" lean-forward="true" selection-start-line="239" selection-start-column="22" selection-end-line="239" selection-end-column="22" />
+        <state relative-caret-position="426">
+          <caret line="242" column="1" lean-forward="true" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
