@@ -38,6 +38,7 @@ Please enter your note:
 Your note has been well received, 1 second while saving it ….
 Done!
 
+
 <Click Enter to return to main menu>
 ************************************
 Add new note: (Negative Case)
