@@ -241,9 +241,11 @@ switch (choice) {
     }
 
 
-}char ch;
+}
+    system("cls");
+char ch;
 cin.get(ch);
-system("cls");
+
     cout << "Welcome to the brand new ï¿½Sticky Notesï¿½!.\n"
          << "Here is the list of operation this program offers:.\n"
          << " 1 - Add new user.\n"
