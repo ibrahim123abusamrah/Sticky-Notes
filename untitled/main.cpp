@@ -74,8 +74,8 @@ cout << "Welcome to the brand new ï¿½Sticky Notesï¿½!.\n"
      << " 2 - View notes for a specific user.\n"
      << " 4 - Exit.\n"
      << " Enter your choice and press return: ";
-cin >> choice;
 
+while(cin >> choice){
 switch (choice) {
     case 1: {
         //code to Add new user
@@ -240,6 +240,17 @@ switch (choice) {
 
     }
 
+
+}char ch;
+cin.get(ch);
+system("cls");
+    cout << "Welcome to the brand new ï¿½Sticky Notesï¿½!.\n"
+         << "Here is the list of operation this program offers:.\n"
+         << " 1 - Add new user.\n"
+         << " 2 - Add new note.\n"
+         << " 2 - View notes for a specific user.\n"
+         << " 4 - Exit.\n"
+         << " Enter your choice and press return: ";
 }
 
 return 0;
