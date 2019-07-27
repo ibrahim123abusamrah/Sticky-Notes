@@ -71,7 +71,7 @@ int main() {
          << "Here is the list of operation this program offers:.\n"
          << " 1 - Add new user.\n"
          << " 2 - Add new note.\n"
-         << " 2 - View notes for a specific user.\n"
+         << " 3 - View notes for a specific user.\n"
          << " 4 - Exit.\n"
          << " Enter your choice and press return: ";
 
@@ -92,10 +92,12 @@ int main() {
                      << " Nice to meet you .\n" << first_name << " " << last_name
                      << " .\n<Click Enter to return to main menu>.\n";
                 //  <<<<<<< HEAD
+
                 adduser_to_file_contain_all_user(first_name, last_name); // function that add user into file .txt contain all user
                 string filename = first_name + " " + last_name;
                 cout << filename;
-
+                all_user_firstNAme.push_back(first_name);
+                all_user_secndNAme.push_back(last_name);
                 //creat new file user
                 ofstream myfile;
                 myfile.open(
@@ -139,7 +141,7 @@ int main() {
                     cout << "\nYour record is found, I’m now opening your file ….";
                     //readNote_tofileUser.open("C:\\Users\\Just work\\Documents\\GitHub\\Sticky-Notes\\untitled\\cmake-build-debug\\"+First_Name+" "+Last_Name+".txt");
                     write_note_tofileUser.open(
-                            "C:\\Users\\Just work\\Documents\\GitHub\\Sticky-Notes\\untitled\\cmake-build-debug\\" +
+                            "C:/Users/Just work/Documents/GitHub/Sticky-Notes/untitled/cmake-build-debug/" +
                             First_Name + " " + Last_Name + ".txt", ios::app);
 
                     cout << "\nReady!"
@@ -247,7 +249,7 @@ int main() {
              << "Here is the list of operation this program offers:.\n"
              << " 1 - Add new user.\n"
              << " 2 - Add new note.\n"
-             << " 2 - View notes for a specific user.\n"
+             << " 3- View notes for a specific user.\n"
              << " 4 - Exit.\n"
              << " Enter your choice and press return: ";
     }
