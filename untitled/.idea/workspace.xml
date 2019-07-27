@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bce43b6-7fa3-4629-aa95-b4dfa5235161" name="Default Changelist" comment="">
+    <list default="true" id="0e8c16e8-68ea-47a7-8109-7fd13d087bc2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -30,20 +30,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="242" column="1" lean-forward="true" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
+            <state relative-caret-position="289">
+              <caret line="98" column="50" selection-start-line="98" selection-start-column="50" selection-end-line="98" selection-end-column="50" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -60,11 +51,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-176" />
-    <option name="y" value="50" />
-    <option name="width" value="2746" />
-    <option name="height" value="788" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -72,28 +63,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/CLionProjects/untitled1" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -119,7 +95,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3bce43b6-7fa3-4629-aa95-b4dfa5235161" name="Default Changelist" comment="" />
+      <changelist id="0e8c16e8-68ea-47a7-8109-7fd13d087bc2" name="Default Changelist" comment="" />
       <created>1563623429815</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -127,6 +103,9 @@
       <workItem from="1563623433184" duration="108000" />
       <workItem from="1563624314019" duration="13596000" />
       <workItem from="1563652841287" duration="1966000" />
+      <workItem from="1563993385572" duration="2289000" />
+      <workItem from="1563996081830" duration="2189000" />
+      <workItem from="1564169967939" duration="743000" />
     </task>
     <task id="LOCAL-00001" summary="first code that i copy this project from previous project that didn't work">
       <created>1563624874958</created>
@@ -139,7 +118,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22329000" />
+    <option name="totallyTimeSpent" value="28115000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -151,21 +130,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.026119404" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.022796353" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.283857" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31423897" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.36619717" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.27332243" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32733223" />
@@ -182,17 +160,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first code that i copy this project from previous project that didn't work" />
     <option name="LAST_COMMIT_MESSAGE" value="first code that i copy this project from previous project that didn't work" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>244</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
@@ -256,8 +223,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="242" column="1" lean-forward="true" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
+        <state relative-caret-position="289">
+          <caret line="98" column="50" selection-start-line="98" selection-start-column="50" selection-end-line="98" selection-end-column="50" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
