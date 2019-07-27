@@ -67,7 +67,7 @@ int main() {
     cout << endl;
 
 // main menu
-    cout << "Welcome to the brand new ï¿½Sticky Notesï¿½!.\n"
+    cout << "Welcome to the brand new �Sticky Notes�!.\n"
          << "Here is the list of operation this program offers:.\n"
          << " 1 - Add new user.\n"
          << " 2 - Add new note.\n"
@@ -120,7 +120,7 @@ int main() {
                 // open stream to write note for user
                 // ifstream readNote_tofileUser;
                 string First_Name, Last_Name;
-                cout << " Let’s add a new note ... \n"
+                cout << " Let�s add a new note ... \n"
                      << "Please enter your full name first: <Enter First Name> <Enter Last Name> \n";
                 cin >> First_Name >> Last_Name;
 
@@ -138,7 +138,7 @@ int main() {
                 }
                 if (is_user_exist) {
                     string userNote;
-                    cout << "\nYour record is found, I’m now opening your file ….";
+                    cout << "\nYour record is found, I�m now opening your file �.";
                     //readNote_tofileUser.open("C:\\Users\\Just work\\Documents\\GitHub\\Sticky-Notes\\untitled\\cmake-build-debug\\"+First_Name+" "+Last_Name+".txt");
                     write_note_tofileUser.open(
                             "C:/Users/Just work/Documents/GitHub/Sticky-Notes/untitled/cmake-build-debug/" +
@@ -164,7 +164,7 @@ int main() {
 
                     int hour = 1 + ltm->tm_hour;
                     int mint = 1 + ltm->tm_min;
-                    cout << "Your note has b1een well received, 1 second while saving it ….\n";
+                    cout << "Your note has b1een well received, 1 second while saving it �.\n";
                     if (mint < 10) {
                         write_note_tofileUser << Month << "/" << Day << "/" << Year << " " << hour << ":" << "0" << mint
                                               << ":" << "\n***\n" << userNote << "\n***\n";
@@ -196,7 +196,7 @@ int main() {
                 bool t = isUserexist(First_Name, Last_Name);
                 if (t == true) {
 
-                    //view all user’s notes: (Positive Case)
+                    //view all user�s notes: (Positive Case)
 
                     cout << "Found it!\n"
                          << "Here are your stored notes:\n"
@@ -227,8 +227,8 @@ int main() {
                                 close();
                     }
                 } else {
-                    // view all user’s notes: (Negative Case)
-                    cout << "\nUmm, can’t find any saved notes for you.\n"
+                    // view all user�s notes: (Negative Case)
+                    cout << "\nUmm, can�t find any saved notes for you.\n"
                          << "<Click Enter to return to main menu>";
 
                 }
@@ -245,7 +245,7 @@ int main() {
         }
         system("pause");
 
-        cout << "Welcome to the brand new ï¿½Sticky Notesï¿½!.\n"
+        cout << "Welcome to the brand new �Sticky Notes�!.\n"
              << "Here is the list of operation this program offers:.\n"
              << " 1 - Add new user.\n"
              << " 2 - Add new note.\n"
